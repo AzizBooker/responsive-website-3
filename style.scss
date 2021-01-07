@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'fonts';
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.hero{
+    
+    
+    height: 100%;
+    width: 100%;
+    background: black;
+    h1{
+        color: white;
+        padding-top: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Playfair Display',serif;
+        font-weight: 600;
+    }
+}
+.gallery{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
