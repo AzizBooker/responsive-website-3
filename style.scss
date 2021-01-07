@@ -21,6 +21,39 @@ body{
 }
 .gallery{
     background-color: blue;
-    height: 100%;
+    padding: 1rem 1rem;
+    
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
 }
+.column{
+    flex: 33.3%;
+    max-width: 33%;
+    padding: 0 20px;
+    img{
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 90%;
+        :hover{
+            width: 10%;
+        }
+        
+    }
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
