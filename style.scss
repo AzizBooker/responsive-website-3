@@ -1,5 +1,8 @@
 @import 'reset';
 @import 'fonts';
+
+$primaryColor:#228b22;
+$secondaryColor: #397339;
 body{
     height: 100vh;
     width: 100vw;
@@ -9,18 +12,28 @@ body{
     
     height: 100%;
     width: 100%;
-    background: black;
+    background:$primaryColor;
     h1{
-        color: white;
         padding-top: 2rem;
-        font-size: 3rem;
-        text-align: center;
+        font-size: 1rem;
         font-family: 'Playfair Display',serif;
-        font-weight: 600;
-    }
+        color: mix(#fff, $primaryColor, 85%);
+        text-align: center;
+            font-size: calc(1em + 10vw) ;  
+            font-weight: 900;
+            text-shadow: 
+                -0.0075em 0.0075em 0 mix(#fff, $secondaryColor, 94%),
+                0.005em 0.005em 0 mix(#fff, $secondaryColor, 60%),
+                0.01em 0.01em 0 mix(#fff,$secondaryColor, 62%), 
+                0.015em 0.015em mix(#fff, $secondaryColor, 64%), 
+                0.02em 0.02em 0 mix(#fff, $secondaryColor, 66%), 
+                0.025em 0.025em 0 mix(#fff, $secondaryColor, 68%),
+                0.03em 0.03em 0 mix(#fff, $secondaryColor, 70%),
+                0.035em 0.035em 0 mix(#fff, $secondaryColor, 72%);
+        }
 }
 .gallery{
-    background-color: blue;
+    background-color: $secondaryColor;
     padding: 1rem 1rem;
     
     width: 100%;
@@ -33,15 +46,35 @@ body{
     flex: 33.3%;
     max-width: 33%;
     padding: 0 20px;
-    img{
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 90%;
-        :hover{
-            width: 10%;
-        }
-        
-    }
+    
+}
+img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 90%;
+    transform: scale(1);
+    
+    
+}
+h1{
+color: mix(#fff, $primaryColor, 85%);
+	font-size: calc(1em + 20vw) ;  
+	font-weight: 900;
+	text-shadow: 
+		-0.0075em 0.0075em 0 mix(#fff, $secondaryColor, 94%),
+		0.005em 0.005em 0 mix(#fff, $secondaryColor, 60%),
+		0.01em 0.01em 0 mix(#fff,$secondaryColor, 62%), 
+		0.015em 0.015em mix(#fff, $secondaryColor, 64%), 
+		0.02em 0.02em 0 mix(#fff, $secondaryColor, 66%), 
+		0.025em 0.025em 0 mix(#fff, $secondaryColor, 68%),
+		0.03em 0.03em 0 mix(#fff, $secondaryColor, 70%),
+		0.035em 0.035em 0 mix(#fff, $secondaryColor, 72%);
+}
+footer{
+    height: 100px;
+    width: 100vw;
+    margin-top: 10px;
+    background-color: black;
 }
 
 @media (max-width: 800px){

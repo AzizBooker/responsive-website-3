@@ -11,7 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, footer {
   margin: 0;
   padding: 0;
   border: 0;
@@ -62,20 +62,22 @@ body {
 .hero {
   height: 100%;
   width: 100%;
-  background: black;
+  background: #228b22;
 }
 
 .hero h1 {
-  color: white;
   padding-top: 2rem;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 1rem;
   font-family: 'Playfair Display',serif;
-  font-weight: 600;
+  color: #deeede;
+  text-align: center;
+  font-size: calc(1em + 10vw);
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #f3f7f3, 0.005em 0.005em 0 #b0c7b0, 0.01em 0.01em 0 #b4cab4, 0.015em 0.015em #b8cdb8, 0.02em 0.02em 0 #bccfbc, 0.025em 0.025em 0 #c0d2c0, 0.03em 0.03em 0 #c4d5c4, 0.035em 0.035em 0 #c8d8c8;
 }
 
 .gallery {
-  background-color: blue;
+  background-color: #397339;
   padding: 1rem 1rem;
   width: 100%;
   display: -webkit-box;
@@ -94,14 +96,26 @@ body {
   padding: 0 20px;
 }
 
-.column img {
+img {
   margin-top: 8px;
   vertical-align: middle;
   width: 90%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-.column img :hover {
-  width: 10%;
+h1 {
+  color: #deeede;
+  font-size: calc(1em + 20vw);
+  font-weight: 900;
+  text-shadow: -0.0075em 0.0075em 0 #f3f7f3, 0.005em 0.005em 0 #b0c7b0, 0.01em 0.01em 0 #b4cab4, 0.015em 0.015em #b8cdb8, 0.02em 0.02em 0 #bccfbc, 0.025em 0.025em 0 #c0d2c0, 0.03em 0.03em 0 #c4d5c4, 0.035em 0.035em 0 #c8d8c8;
+}
+
+footer {
+  height: 100px;
+  width: 100vw;
+  margin-top: 10px;
+  background-color: black;
 }
 
 @media (max-width: 800px) {
